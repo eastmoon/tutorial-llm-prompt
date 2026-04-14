@@ -67,3 +67,14 @@
   - [巢狀判斷](./prompt/syntax.determine.nested.md)
   - [Switch 條件判斷](./prompt/syntax.determine.switch.md)
   - [Guard Clause 判斷](./prompt/syntax.determine.guard.md)
+
+### 迴圈
+
+如何在提示詞文件中撰寫迴圈，用來處理循環資料。
+
++ [說明](./docs/syntax.loop.md)
++ 範本
+  - [自然語法](./prompt/syntax.loop.md)
+  - [格式化語法 - ForEach](./prompt/syntax.loop.each.md)
+  - [格式化語法 - ForRange](./prompt/syntax.loop.range.md)
+  - [格式化語法 - While](./prompt/syntax.loop.while.md)
