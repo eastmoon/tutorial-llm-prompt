@@ -63,4 +63,7 @@
 
 + [說明](./docs/syntax.determine.md)
 + 範本
-  - [假如句型](./prompt/syntax.determine.md)
+  - [判斷句](./prompt/syntax.determine.md)
+  - [巢狀判斷](./prompt/syntax.determine.nested.md)
+  - [Switch 條件判斷](./prompt/syntax.determine.switch.md)
+  - [Guard Clause 判斷](./prompt/syntax.determine.guard.md)
