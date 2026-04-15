@@ -91,3 +91,7 @@
   + [生成目錄、檔案](./prompt/syntax.file.generate.md)
   + [搜尋目錄、檔案](./prompt/syntax.file.search.md)
     - 此範本搜尋的對象為生成目錄、檔案的結果
+  + [論文提煉](./prompt/syntax.file.generate.paper.md)
+    - 將指定的論文下載並節錄內容自指定的輸出格式
+  + [論文關鍵字搜尋](./prompt/syntax.file.search.paper.md)
+    - 自精煉的檔案提取內容，從特定章節取得關鍵名詞
