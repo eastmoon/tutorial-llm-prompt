@@ -1,0 +1,3 @@
+## 簡介
+
+『$EXPLAIN_OUTPUT』

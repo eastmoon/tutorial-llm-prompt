@@ -78,3 +78,14 @@
   - [格式化語法 - ForEach](./prompt/syntax.loop.each.md)
   - [格式化語法 - ForRange](./prompt/syntax.loop.range.md)
   - [格式化語法 - While](./prompt/syntax.loop.while.md)
+
+### 文件操作
+
++ [說明](./docs/syntax.file.md)
++ 範本
+  + [讀寫檔案](./prompt/syntax.file.md)
+  + [樣板檔案](./prompt/syntax.template.md)
+    - 需將樣板 [templates](./templates) 複製到專案根目錄
+  + [生成目錄、檔案](./prompt/syntax.file.generate.md)
+  + [搜尋目錄、檔案](./prompt/syntax.file.search.md)
+    - 此範本搜尋的對象為生成目錄、檔案的結果
