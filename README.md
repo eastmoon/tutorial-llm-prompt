@@ -95,3 +95,14 @@
     - 將指定的論文下載並節錄內容自指定的輸出格式
   + [論文關鍵字搜尋](./prompt/syntax.file.search.paper.md)
     - 自精煉的檔案提取內容，從特定章節取得關鍵名詞
+
+### 樣板運用
+
+如何在提示詞文件中經由提煉關鍵字為標題，讓樣板基於關鍵字內容形成細節。
+
+這樣設計是考量，多數設計文案是一段用戶的使用需求，然而，在這些需求文件中必然存在著關鍵名詞，而將關鍵名詞提煉，讓樣板基於關鍵字構成文件標題，並基於標題與規範生成出細節與描述。
+
++ [說明](./docs/syntax.template.application.md)
++ 範本
+  - 『單一提示詞』範本參考[論文提煉](./prompt/syntax.file.generate.paper.md)
+  - [基於 SDD - Constitution 應用](syntax.template.app.constitution.md)
