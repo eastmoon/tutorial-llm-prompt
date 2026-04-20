@@ -106,3 +106,12 @@
 + 範本
   - 『單一提示詞』範本參考[論文提煉](./prompt/syntax.file.generate.paper.md)
   - [基於 SDD - Constitution 應用](syntax.template.app.constitution.md)
+
+
+### 三層式架構
+
+如何在提示詞文件中實踐三層式結構，將提示詞分為 `Workflow -> Agent -> Skill`。
+
++ 說明
+  - [三層式結構](./docs/3tier-structure.md)
+  - [Workflow 擴大議題](./docs/3tier-issue-workflow-content-expanded.md)
