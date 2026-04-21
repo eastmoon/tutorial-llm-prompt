@@ -112,6 +112,17 @@
 
 如何在提示詞文件中實踐三層式結構，將提示詞分為 `Workflow -> Agent -> Skill`。
 
+以下範本基於 Claude 實務，執行時請將 [agents](./agents) 和 [skills](./skills) 複製到 ```.claude``` 目錄下。
+
 + 說明
   - [三層式結構](./docs/3tier-structure.md)
   - [Workflow 擴大議題](./docs/3tier-issue-workflow-content-expanded.md)
++ 範本
+  - 隔離性驗證 - [單一檔案](./skills/isolation-single-prompt/SKILL.md)
+  - 隔離性驗證 - 採用不同的 Skill 測試同個 [Agent](./agents/explainer.md)
+    + [基於 YAML - Copilot 建議方式](./skills/ask-question-yaml/SKILL.md)
+      - 會先讀取 Agent 檔案後執行，Agent 會被 Workflow 的提示詞影響隔離性
+    + [基於 API - Claude 原生方式](./skills/ask-question-api/SKILL.md)
+      - SubAgent 間不會互相干擾
+    + [混合 API 與 Call Agent](./skills/ask-question-mix/SKILL.md)
+      - 會先讀取 Agent 檔案後執行，Agent API 不會被干擾，但呼叫 Agent 則會被 Agent 會被 Workflow 的提示詞影響隔離性

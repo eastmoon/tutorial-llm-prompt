@@ -66,6 +66,8 @@ Workflow.md          Agent.md              SKILL.md
 
 在三層式結構中有個主要議題，被 Workflow 執行的 Agent 是否為新 Session，且 Agent 的提示詞不會互相干擾。
 
+**本節彙整 Claude.ai 回應內容，但 Copilot 並無相同回應。**
+
 ### 為什麼新 Session 能確保隔離？
 
 每次 Workflow 呼叫一個 Agent，本質上是發出一個全新的 ```messages.create()``` API 請求。新 session 意味著：
@@ -84,6 +86,12 @@ Workflow.md          Agent.md              SKILL.md
 <center>
   <img src='./img/3tier-session_isolation_mechanism.svg' style='background-color: #000000;'/>
 </center>
+
+**補充說明**，在 Claude 是透過 `allowed-tools: Agent`，並提供 `Agent` 工具來確保當下呼叫為一個獨立的子代理 ( SubAgnet )；同樣設計在 Copilot 並未支援，但若實踐相近效果，如預期包括以下方式：
+
++ 使用 MCP 伺服器，利用伺服器間的執行程序獨立來分離
++ 使用 YAML 工作流程定義 + 提示詞編排，實務驗證後時要依靠提示詞的規範來確保獨立性，但實際效果依靠大語言模型對提示詞的解釋，且會導致 Workflow 內容擴大
++ 使用多代理框架 ( 如 AutoGen、LangGraph )，利用撰寫程式來達到多執行續運行，但需撰寫獨立應用程式
 
 ### 隔離性的保證
 
